@@ -1,0 +1,265 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple responsive food landing page built with HTML5 and CSS3.">
+    <title>Nova Food - Delicious Food, Happy Moments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="logo">Nova<span>.</span></a>
+
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content container">
+
+                <div class="hero-text">
+                    <p class="eyebrow">FRESH. TASTY. DELICIOUS.</p>
+
+                    <h1>Good food <span>brings happiness.</span></h1>
+
+                    <p class="hero-description">
+                        Discover delicious meals made with fresh ingredients and
+                        authentic flavors. From tasty starters to satisfying main
+                        courses, every dish is prepared with care.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#features" class="btn btn-primary">Explore Menu</a>
+                        <a href="#about" class="btn btn-secondary">About Us</a>
+                    </div>
+                </div>
+
+                <div class="hero-card" aria-label="Food menu illustration">
+                    <div class="card-window">
+
+                        <div class="window-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="window-content">
+                            <div class="mock-title"></div>
+                            <div class="mock-line"></div>
+                            <div class="mock-line short"></div>
+
+                            <div class="mock-grid">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="features section" id="features">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">OUR SPECIALTIES</p>
+
+                    <h2>Delicious food for every mood</h2>
+
+                    <p>
+                        Enjoy a variety of flavorful dishes prepared with fresh
+                        ingredients and carefully selected recipes.
+                    </p>
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">🍕</div>
+
+                        <h3>Fresh Ingredients</h3>
+
+                        <p>
+                            We use fresh and quality ingredients to create
+                            flavorful meals that you will love.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">🍜</div>
+
+                        <h3>Delicious Flavors</h3>
+
+                        <p>
+                            Explore exciting flavors and delicious recipes
+                            inspired by different cuisines.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">🍰</div>
+
+                        <h3>Something for Everyone</h3>
+
+                        <p>
+                            From tasty snacks to satisfying meals and desserts,
+                            there is something for every food lover.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="about section" id="about">
+            <div class="container about-grid">
+
+                <div>
+                    <p class="eyebrow">ABOUT NOVA FOOD</p>
+
+                    <h2>Made with passion, served with love.</h2>
+                </div>
+
+                <div>
+
+                    <p>
+                        At Nova Food, we believe great food brings people
+                        together. Our goal is to create delicious meals that
+                        make every moment special.
+                    </p>
+
+                    <p>
+                        From fresh ingredients to carefully prepared dishes,
+                        every meal is made with attention to flavor, quality,
+                        and presentation.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="cta section" id="contact">
+            <div class="container cta-box">
+
+                <div>
+                    <p class="eyebrow">READY TO TASTE?</p>
+
+                    <h2>Let's make your next meal special.</h2>
+                </div>
+
+                <a href="mailto:hello@example.com" class="btn btn-primary">
+                    Contact Us
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="#home" class="logo">Nova<span>.</span></a>
+
+                <p>
+                    Fresh flavors, delicious meals, and happy moments.
+                </p>
+            </div>
+
+
+            <div class="social-links" aria-label="Social links">
+
+                <a href="https://github.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="https://x.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    X
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container copyright">
+
+            <p>
+                &copy; 2026 Nova Food. Made with love for food lovers.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+
+            const isOpen = navLinks.classList.toggle("show");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+
+        });
+
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navLinks.classList.remove("show");
+
+                menuToggle.setAttribute("aria-expanded", "false");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
+```
